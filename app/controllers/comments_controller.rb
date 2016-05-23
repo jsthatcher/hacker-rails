@@ -1,8 +1,5 @@
 class CommentsController < ApplicationController
   before_action :find_post, only: [:create, :destroy]
-  # def index
-  #   @comments = Comment.all
-  # end
 
   def new
     @comment = Comment.new(comment_params)
@@ -20,10 +17,6 @@ class CommentsController < ApplicationController
   end
 
   private
-
-  # def find_comment
-  #   @comment = Comment.find_by(post_id: params[:id])
-  # end
 
   def find_post
     @post = Post.find(params[:post_id])

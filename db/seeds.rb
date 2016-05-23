@@ -10,7 +10,7 @@
   User.create(
     full_name: Faker::Superhero.name,
     email: Faker::Internet.free_email,
-    hashed_password: 'password'
+    password_digest: 'password'
     )
 end
 
