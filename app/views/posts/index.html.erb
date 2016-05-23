@@ -1,0 +1,8 @@
+<h1> Hacker News </h1>
+<h4> Jack + Denny </h4>
+
+<%= link_to '+New Post', new_post_path %>
+
+<% @posts.each do |post| %>
+  <p> <%= link_to "#{post.title}", post %> </p>
+<%end%>
